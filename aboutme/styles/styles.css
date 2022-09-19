@@ -1,4 +1,4 @@
-body{
+/*body{
     text-align: center
 }
 
@@ -28,4 +28,11 @@ p {
 footer {
     background-color: steelblue;
     color: white;
-}
+}*/
+body {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 4em;
+    font-size: 18px;
+    text-align: left;
+  }
