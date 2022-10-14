@@ -55,7 +55,6 @@ main section {
 main section img {
     box-sizing: border-box;
     border-radius: 10px;
-    border-style: groove;
 }
 
 section {
@@ -98,7 +97,7 @@ footer {
 
 .home-title {
     color: #1518d4a8;
-    font-family: Milonga, Gotisch, anybody fantasy;
+    font-family: Milonga, Gotisch, anybody, fantasy;
     font-size: 2em;
     margin-top: 10px;
 }
@@ -157,7 +156,7 @@ footer p a:hover {
 }
 
 footer .social img {
-    padding-top: 15 px;
+    padding-top: 15px;
 }
 
 .rivers-card,
