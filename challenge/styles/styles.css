@@ -1,5 +1,37 @@
-h1{
-    text-align:center;
-    font-family: white);
-  color: green;
+#content {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: rgba(248, 76, 176, 0.575);
+}
+
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+.quote {
+  text-align: center;
+  margin: 2px;
+  color: white;
+}
+
+#quote {
+  text-align: center;
+  margin: 20px;
+  color: white;
+}
+
+.list {
+  margin: 2px 170px;
+}
+
+img {
+  text-align: center;
+  width: 180px;
+  margin: 20px 300px;
+}
+
+#remark {
+  text-align: center;
 }
