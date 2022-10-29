@@ -228,7 +228,7 @@ footer .social img {
     box-shadow: 5px 5px 10px grey;
 }
 
-.card-image:hover {
+.card-img:hover {
     opacity: .6;
     transform: scale(1.1);
 }
