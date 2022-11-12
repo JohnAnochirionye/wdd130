@@ -30,12 +30,21 @@ nav a {
     padding: 50px;
 }
 
+.page-title {
+    text-align: center;
+    color: blue;
+    font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 50px;
+}
+
 nav a:hover {
     text-align: center;
     background-color: #b49239;
     color: #ff006e;
     padding: 35px;
-
 }
 #hero-msg {
     grid-column: 2/3;
