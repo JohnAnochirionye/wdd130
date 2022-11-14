@@ -121,6 +121,65 @@ section {
     box-shadow: 5px 5px 10px #6f7364;
 }
 
+/*.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}*/
+
+#pge-box {
+    display: grid;
+    grid-template-columns: auto;
+    
+}
+#page-intro {
+    text-align: center;
+    color: black;
+    font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 50px;
+    background-size: 50px;
+    background-color: #b49239;
+}
+#container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin:auto;
+}
+#left {
+    text-align: left;
+    font-size: 0.8em;
+    margin: 20px 20px 50px 20px;
+}
+#right {
+    text-align: left;
+    font-size: 0.8em;
+    margin: 20px 20px 50px 20px;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+
+}
+.salmon {
+    text-align: center;
+    font-family: Milonga, Serif;
+    font-size: 1.5em;
+    color: #ff006e;
+    font-weight: bold;
+}
+.gray-canyon{
+    text-align: center;
+    font-family: Milonga, Serif;
+    font-size: 1.5em;
+    color: #094e12;
+    font-weight: bold
+}
+.rafting h2 {
+    text-align: center;
+    font-family: Milonga, Serif;
+    font-size: 0.5em;
+    color: blue;  
+}
+
 footer {
     background-color: darkred;
     padding: 25px 50px;
@@ -129,6 +188,7 @@ footer {
     justify-content: space-around;
     align-items: center;
 }
+
 .home-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
