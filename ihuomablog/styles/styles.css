@@ -32,14 +32,15 @@ nav a {
     text-align: center;
     color: #2722ac;
     text-decoration: none;
-    padding: 50px;
-    font-size: 1.8em;
+    padding: 10px;
+    font-size: 1.5em;
+    margin: 50px;
 }
 nav a:hover {
     text-align: center;
     background-color: #b49239;
     color: red;
-    padding: 35px;
+    padding: 10px;
 }
 
 #fashion-home {
@@ -131,7 +132,7 @@ body {
 }
 
 .food-circle {
-    border-radius: 50%;
+    border-radius: 100%;
     width: 300px;
 }
 
