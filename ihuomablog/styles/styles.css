@@ -2,6 +2,9 @@
 #content {
     max-width: 1800px;
     margin: 0 auto;
+    display: grid;
+    background-color: lightgrey;
+    
 }
 
 header {
@@ -33,64 +36,123 @@ nav a {
     color: #2722ac;
     text-decoration: none;
     padding: 10px;
-    font-size: 1.5em;
-    margin: 50px;
+    font-size: 1.2em;
+    margin: 20px;
 }
 nav a:hover {
     text-align: center;
     background-color: #b49239;
     color: red;
-    padding: 10px;
+    padding: 2px;
 }
 
-#fashion-home {
+body {
+    background-color: pink;
+    font-family: Anybody, display;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+main {
     display: grid;
-    grid-template-columns: 50px 50px 50px;
+    grid-template-columns: 12fr;
+    grid-template-rows: 8fr;
+}
+
+.introduction {
+    text-align: auto;
+    color: black;
+    text-decoration: none;
+    line-height: 1.5em;
+    font-family: Roboto, "Sans-serif";
+    padding: 80px;
+    font-size: 1.5em;
+    font-weight: bold;
+    grid-template-columns: 4/6;
+    grid-template-rows: 1/2;
+    
+}
+#nig {
+    display: grid;
+    grid-template-columns: 12fr;
+    grid-template-rows: 8fr;
+    justify-content: center;
 }
 .fashion {
-    width: 50%;
-    grid-column: 1/8;
-    grid-row: 1/3;
-    box-shadow: 5px 5px 10px pink;
+    width: 500px;
+    margin: 10px;
+    grid-template-columns: 1/8;
+    grid-template-rows: 1/3;
+    justify-items: left;
 }
+
 .fashion-box {
+    background-color: darkgray;
+    font-family: milonga, Grenze, Display;
+    line-height: 1em;
+    padding: 20px;
+    width: 40%;
+    box-shadow: 5px 5px 10px green;
+    
+}
+.fashion-circle {
+    border-radius: 50%;
+    width: 300px;
+    grid-column: 10/12;
+    grid-row: 1/3;
+    justify-items: right;
+}  
+/*#fashion-home {
+    display: grid;
+    grid-template-columns: 7fr 1fr ;
+}*/
+/*
+.fashion::after, .fashion-box::after, .fashion-circle::after {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+#nig {
+    
+    content: "";
+    clear: both;
+    display: table;
+}
+*/
+
+/*.fashion-box {
     background-color: darkgray;
     font-family: milonga, Grenze, Display;
     line-height: 1.5em;
     padding: 35px;
     width: 20%;
-    grid-column: 2/5;
-    grid-row: 2/3;
+    grid-column: 3/8;
+    grid-row: 5/6;
     box-shadow: 5px 5px 10px #6f7364;
 }
+*/
 
-.fashion-circle {
-    border-radius: 50%;
-    width: 300px;
-    
-}
-
-.food-img {
+/*.food-img {
     width: 50%;
     grid-column: 1/4;
     grid-row: 1/3;
     box-shadow: 5px 5px 10px pink;
-}
+}*/
 
 #foods {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    justify-items: left;
 }
-.food-box {
-    background-color: darkgray;
-    font-family: milonga, Grenze, Display;
-    line-height: 1.5em;
-    padding: 35px;
-    width: 20%;
-    grid-column: 3/5;
-    grid-row: 2/3;
-    box-shadow: 5px 5px 10px #6f7364;
-}
+
+/*.food-box {
+    display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 20px;
+      justify-items: center;
+}*/
 
 .shop-now,
 .explore {
@@ -108,29 +170,6 @@ nav a:hover {
     background-color: blueviolet;
 }
 
-body {
-    background-color: pink;
-    font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
-    margin: 0;
-    padding: 0;
-}
-.intro {
-    text-align: auto;
-    color: black;
-    text-decoration: none;
-    line-height: 1.5em;
-    font-family: Roboto, "Sans-serif";
-    padding: 80px;
-    font-size: 1.5em;
-    margin: 10px 10px 50px 50px;
-    font-weight: bold;
-    display: grid;
-    grid-template-columns: 1/10;
-    grid-template-rows: 1/3;
-
-}
-
 .food-circle {
     border-radius: 100%;
     width: 300px;
@@ -144,3 +183,48 @@ footer {
     justify-content: space-around;
     align-items: center;
 }
+.flip-box {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    justify-content: center;
+  }
+  
+  /* Style the front side */
+  .flip-box-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-box-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
